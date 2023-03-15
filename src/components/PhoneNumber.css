@@ -1,0 +1,35 @@
+.my-container-class {
+  position: relative;
+  display: inline-block;
+}
+
+.my-input-class {
+  width: 100%;
+  border: 1px solid #0a0a0a;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.my-button-class {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.my-dropdown-class {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  max-height: 200px;
+  overflow-y: auto;
+}

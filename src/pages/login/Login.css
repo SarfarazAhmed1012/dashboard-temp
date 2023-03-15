@@ -1,0 +1,346 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 40rem;
+  width: 66rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5rem;
+}
+
+.left-section {
+  flex-basis: 50%;
+  background-image: linear-gradient(
+    to right bottom,
+    #095eee,
+    #9451d0,
+    #bf4daf,
+    #d25793,
+    #d66a7f
+  );
+}
+
+.left-section img {
+  height: 100%;
+}
+
+.right-section {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.right-section h1 {
+  font-family: "Tilt Neon", cursive;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-left: 3.5rem;
+}
+
+.heading_text {
+  display: flex;
+}
+
+.right-section span {
+  display: flex;
+  justify-content: flex-start;
+  /* margin-right: 5rem; */
+  font-family: "Tilt Neon", cursive;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-left: 3.5rem;
+  color: #9ba2aa;
+}
+
+.input-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.input-container input {
+  width: 23rem;
+  padding: 15px;
+  margin: 4px;
+  box-sizing: border-box;
+  padding-left: 60px;
+  border-radius: 12px;
+  border: 1px solid rgb(230, 220, 220);
+  margin-right: 0rem;
+  color: #ccc;
+}
+
+.Icon-inside {
+  position: relative;
+}
+
+.Icon-inside i {
+  position: absolute;
+  left: 4.7rem;
+  top: 0.5rem;
+  padding: 10px 10px;
+  color: #bfc9cf;
+}
+/* .input-container input { */
+/* margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+} */
+
+.logo {
+  margin-top: 7rem;
+  margin-left: 3.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.logo img {
+  width: 8rem;
+  height: 2rem;
+}
+
+.heading_text {
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: flex-start;
+}
+
+.forget_pass {
+  margin-top: 1rem;
+  margin-right: 2.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #0a66c2;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_input {
+  margin-top: 2rem;
+  align-items: center;
+  background-color: #0a66c2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Tilt Neon", cursive;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+  text-decoration: none;
+  width: 11rem;
+}
+.sign_in_button {
+  background-color: #fcfcfc;
+  color: #16437e;
+  border: 1px solid #16437e;
+}
+.button_input:hover,
+.button_input:focus {
+  background-color: #16437e;
+  color: #ffffff;
+}
+
+.button_input:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.button_input:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+  border: #fcfcfc;
+}
+
+::placeholder {
+  color: #acb4b9;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+input:not(:placeholder-shown) {
+  color: rgb(48, 48, 51);
+  font-size: 1rem;
+  font-family: "Tilt Neon", cursive;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1500px) {
+  .container {
+    height: 40rem;
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    height: 35rem;
+    width: 50rem;
+  }
+  .logo {
+    margin-top: 5rem;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .right-section h1 {
+    font-family: "Tilt Neon", cursive;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+  }
+  .heading_span span {
+    margin-left: 4rem;
+  }
+  .button_input {
+    width: 8.2rem;
+    height: 1rem;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .forget_pass {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  .Icon-inside input {
+    width: 18rem;
+    height: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .Icon-inside i {
+    left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    height: 30rem;
+    width: 45rem;
+  }
+  .button_input {
+    width: 7rem;
+    height: 1rem;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .logo {
+    margin-top: 4rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .right-section h1 {
+    font-family: "Tilt Neon", cursive;
+    font-size: 1.7rem;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+  }
+  .heading_span span {
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+  .button_input {
+    padding: 1rem;
+  }
+  .forget_pass {
+    font-size: 0.8rem;
+    margin-left: 1.4rem;
+  }
+  .Icon-inside input {
+    width: 17rem;
+    height: 2.4rem;
+  }
+  .Icon-inside i {
+    left: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .container {
+    width: 22rem;
+  }
+
+  /* .input-container .Icon-inside {
+    margin-left: 2rem;
+  } */
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .heading_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+  }
+  .heading_text h1 {
+    font-size: 1.5rem;
+  }
+  .heading_span {
+    margin-left: 3rem;
+  }
+  .heading_span span {
+    font-size: 1rem;
+  }
+
+  .Icon-inside input {
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .Icon-inside i {
+  }
+  .input-container {
+    margin-top: 2rem;
+  }
+  .forget_pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-left: 4rem;
+  }
+  .buttons {
+    margin-left: 2rem;
+  }
+  .button_input {
+    width: 5rem;
+    height: 2.2rem;
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+}

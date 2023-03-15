@@ -1,0 +1,252 @@
+.dashboard {
+  font-family: "Rubik", sans-serif;
+  .dashboard_container {
+    .dashboard_top {
+      display: flex;
+      justify-content: space-between;
+      .dashboard_top_left {
+        margin-left: 2rem;
+        h1 {
+          margin: 0;
+          margin-top: 2rem;
+          font-weight: 800;
+        }
+
+        .left_text {
+          margin-top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          h5 {
+            color: #7a6666;
+          }
+          span {
+            color: #305dc2;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+      .dashboard_top_right {
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+    .dashboard_bottom {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: wrap;
+      .dashboard_bottom_left {
+        width: 63%;
+        border-radius: 10px;
+        border: 1px solid rgb(226, 220, 220);
+        margin-bottom: 50px;
+        transition: 0.3s;
+        .dashboard_bottom_left_card_heading {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          font-size: 0.9rem;
+          .dashboard_bottom_button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .dashboard_bottom_button_buttons {
+              display: flex;
+              gap: 0.4rem;
+              button {
+                padding: 0.7rem 1.1rem 0.7rem 1.1rem;
+                border-radius: 10px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                &:hover {
+                  background-color: #cebfbf;
+                }
+              }
+            }
+          }
+        }
+        .dashboard_bottom_left_transaction_details {
+          display: flex;
+          justify-content: space-between;
+          .dashboard_bottom_left_transaction_details_left {
+            padding: 1rem;
+            margin-left: 1rem;
+            h4 {
+              font-weight: 800;
+            }
+            span {
+              color: #9b9393;
+            }
+          }
+          .dashboard_bottom_left_transaction_details_right {
+            padding: 1rem;
+            margin-right: 9rem;
+            h4 {
+              font-weight: 800;
+            }
+            span {
+              color: #9b9393;
+            }
+          }
+        }
+        .dashboard_bottom_left_graphs {
+          display: flex;
+          .dashboard_bottom_left_graphs_graph1 {
+          }
+          .dashboard_bottom_left_graphs_graph2 {
+          }
+        }
+        .dashboard_bottom_left_cards {
+          h5 {
+            margin-left: 2rem;
+            color: rgb(139, 133, 133);
+            font-size: 1rem;
+          }
+          display: flex;
+          flex-direction: column;
+          .dashboard_bottom_left_card {
+            span {
+              font-weight: 500;
+              color: rgb(139, 133, 133);
+            }
+            display: flex;
+            border-radius: 10px;
+            border: 1px solid rgb(226, 220, 220);
+            justify-content: space-between;
+            margin: 0rem 2rem 2rem 2rem;
+            .dashboard_bottom_left_section {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              img {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                margin-left: 1rem;
+              }
+              .dashboard_bottom_cardnumber {
+                margin-bottom: 1rem;
+                h4 {
+                  margin-bottom: 0.6rem;
+                }
+              }
+            }
+            .dashboard_bottom_right_section {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+
+              margin-right: 2rem;
+              .dashboard_bottom_right_date {
+                display: flex;
+                margin-bottom: 1rem;
+                flex-direction: column;
+                h4 {
+                  margin-bottom: 0.6rem;
+                }
+              }
+              .dashboard_bottom_right_balance {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1rem;
+                h4 {
+                  margin-bottom: 0.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .dashboard_bottom_right {
+        width: 30%;
+        border-radius: 10px;
+        border: 1px solid rgb(226, 220, 220);
+        margin-bottom: 50px;
+        transition: 0.3s;
+
+        .bottom_right_dashboard_heading {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          font-size: 0.9rem;
+          margin-bottom: 1rem;
+        }
+        .latest_transactions_dashboard {
+          font-size: 1rem;
+          margin-left: 2rem;
+          color: #7e7474;
+          margin-top: 1rem;
+        }
+        .latest_transactions_dashboard_list:nth-of-type(4) {
+          margin-bottom: 1rem;
+        }
+        .latest_transactions_dashboard_list:nth-of-type(4) {
+          border: none;
+        }
+        .latest_transactions_dashboard_list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          padding: 0.6rem;
+
+          .latest_transactions_dashboard_list_left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              margin-left: 1rem;
+            }
+            .details {
+              margin-left: 2rem;
+              h3 {
+                font-size: 0.9rem;
+              }
+              span {
+                font-size: 0.8rem;
+              }
+            }
+          }
+          .latest_transactions_dashboard_list_right {
+            span {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .dashboard_bottom_left,
+        .dashboard_bottom_right {
+          width: 70%;
+        }
+      }
+
+      @media screen and (max-width: 620px) {
+        .dashboard_bottom_left,
+        .dashboard_bottom_right {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

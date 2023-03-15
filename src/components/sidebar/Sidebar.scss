@@ -1,0 +1,72 @@
+.sidebar {
+  background-color: #f1f4f5;
+  flex: 2;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  .top {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 8rem;
+      height: 2.4rem;
+      padding: 15px;
+      margin-right: 2rem;
+    }
+  }
+  .center {
+    padding-left: 2rem;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .title {
+        font-size: 0.9rem;
+        font-weight: lighter;
+        color: #999;
+        margin-top: 2.5rem;
+        margin-bottom: 0.8rem;
+        margin-left: 1rem;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+        color: #665e5e;
+        font-weight: bold;
+        gap: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        &:hover {
+          color: #141414;
+        }
+      }
+    }
+  }
+  .bottom {
+    margin-top: auto;
+    padding: 2rem;
+    display: flex;
+    margin-right: 1rem;
+    gap: 1rem;
+
+    .settings {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #443f3f;
+      font-weight: bold;
+      gap: 1rem;
+      flex-direction: row;
+      &:hover {
+        color: #141414;
+      }
+    }
+  }
+}

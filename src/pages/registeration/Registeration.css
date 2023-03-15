@@ -1,0 +1,367 @@
+.signup_container {
+  display: flex;
+  flex-direction: row;
+  height: 40rem;
+  width: 60rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.signup_right-section {
+  flex-basis: 50%;
+  background-image: linear-gradient(
+    to right bottom,
+    #095eee,
+    #9451d0,
+    #bf4daf,
+    #d25793,
+    #d66a7f
+  );
+}
+
+.signup_right-section img {
+  height: 100%;
+}
+
+.signup_left-section {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup_heading_text {
+  display: flex;
+}
+.signup_heading_text h1 {
+  font-family: "Tilt Neon", cursive;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 5.3rem;
+  margin-bottom: 0.5rem;
+}
+.signup_heading_span span {
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  /* margin-right: 5rem; */
+  font-family: "Tilt Neon", cursive;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 5.3rem;
+  color: #9ba2aa;
+}
+
+.signup_input-container {
+  margin-top: 0rem;
+  gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.error_message {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  color: red;
+}
+.signup_input input,
+select {
+  width: 18.7rem;
+  height: 2.5rem;
+  /* padding: 15px; */
+  /* margin: 4px; */
+  box-sizing: border-box;
+  padding-left: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgb(202, 194, 194);
+  color: #ccc;
+}
+
+.phnInput {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+}
+
+.signup_logo {
+  margin-top: 2rem;
+  margin-left: 5.3rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.signup_logo img {
+  width: 6.4rem;
+  height: 1.7rem;
+}
+
+.date_label {
+  padding-right: 15rem;
+  color: #9ba2aa;
+}
+
+.signup_buttons {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup_button_input {
+  margin-top: 2rem;
+  align-items: center;
+  background-color: #0a66c2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Tilt Neon", cursive;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 8rem;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+  text-decoration: none;
+}
+.signup_button_input:last-child {
+  background-color: rgb(255, 255, 255);
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+}
+.signup_button_input:hover,
+.signup_button_input:focus {
+  background-color: #16437e;
+  color: #ffffff;
+}
+
+.signup_button_input:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.signup_button_input:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.signup_input input::placeholder {
+  color: #a4acac;
+  opacity: 1;
+  font-size: 0.8rem;
+}
+
+.signup_input input:not(:placeholder-shown) {
+  color: rgb(48, 48, 51);
+  font-size: 1rem;
+  font-family: "Tilt Neon", cursive;
+}
+
+.signup_input textarea:focus,
+.signup_input input:focus {
+  outline: none;
+}
+.already {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.7rem;
+  margin-left: 4rem;
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+  align-items: center;
+  /* color: #0a66c2; */
+  font-size: 1rem;
+  color: #707375;
+}
+.already span {
+  text-decoration: none;
+  color: #0a66c2;
+}
+
+.otp {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+.react-tel-input {
+  margin-left: 5.3rem !important;
+}
+@media only screen and (max-width: 1500px) {
+  .signup_container {
+    height: 40rem;
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .signup_container {
+    height: 35rem;
+    width: 50rem;
+  }
+  .signup_logo {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .signup_left-section h1 {
+    font-family: "Tilt Neon", cursive;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 0.7rem;
+  }
+  .signup_heading_span span {
+    font-size: 1rem;
+    margin-left: 4rem;
+  }
+  .signup_input input,
+  select {
+    width: 15rem;
+    height: 2rem;
+  }
+  .phnInput {
+    width: 15rem;
+    height: 2rem;
+  }
+  .signup_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup_buttons button {
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    width: 2rem;
+    height: 1rem;
+  }
+  .form-control {
+    height: 30px !important;
+    width: 245px !important;
+  }
+  .react-tel-input {
+    margin-left: 4rem !important;
+  }
+  .already {
+    margin-top: 0.7rem;
+    font-size: 0.7rem;
+  }
+  .otp_input {
+    margin-left: 2.2rem;
+  }
+}
+
+/* @media only screen and (max-width: 1000px) {
+  .signup_container {
+    height: 37rem;
+    width: 60rem;
+  }
+} */
+
+@media only screen and (max-width: 800px) {
+  .signup_container {
+    height: 37rem;
+    width: 60rem;
+  }
+  .signup_right-section {
+    width: 20rem;
+  }
+  .signup_right-section img {
+    height: 100%;
+    width: 100%;
+  }
+  .error_message {
+    margin-top: 0.2rem;
+    margin-right: 1rem;
+  }
+  .otp_input {
+    margin-left: 0.5rem;
+  }
+  .otp_validate {
+    margin-right: 2rem;
+  }
+  .signup_input input,
+  select {
+    width: 15rem;
+    height: 2rem;
+  }
+  .form-control {
+    height: 30px !important;
+    width: 240px !important;
+  }
+  .react-tel-input {
+    margin-left: 5rem !important;
+  }
+
+  /* .signup_container {
+    height: 37rem;
+    width: 44rem;
+  } */
+  /* .react-tel-input {
+    margin-left: 25px !important;
+  } */
+}
+
+@media only screen and (max-width: 725px) {
+  .signup_right-section {
+    display: none;
+  }
+  .signup_container {
+    width: 24rem;
+  }
+  .react-tel-input {
+    margin-left: 30px !important;
+  }
+  .signup_left-section {
+    margin-left: 1.5rem;
+  }
+  .signup_input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .form-control {
+    height: 30px !important;
+    width: 240px !important;
+  }
+  .react-tel-input {
+    margin-left: 0rem !important;
+  }
+  .signup_buttons {
+    margin-left: 3rem;
+  }
+  .signup_buttons button {
+    font-size: 0.7rem;
+    width: 1.5rem;
+  }
+  .already {
+    font-size: 0.8rem;
+  }
+  .signup_input input,
+  select {
+    margin-left: 1rem;
+  }
+
+  .react-tel-input {
+    margin-left: 1rem !important;
+  }
+  .signup_logo {
+    margin-left: 3rem;
+  }
+  .signup_heading_span span {
+    margin-left: 3rem;
+  }
+  .signup_heading_text h1 {
+    margin-left: 3rem;
+  }
+}

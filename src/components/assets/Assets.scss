@@ -1,0 +1,220 @@
+.assets {
+  font-family: "Rubik", sans-serif;
+  .assets_container {
+    .assets_top {
+      display: flex;
+      justify-content: space-between;
+      .assets_top_left {
+        margin-left: 2rem;
+        h1 {
+          margin: 0;
+          margin-top: 2rem;
+          font-weight: 800;
+        }
+
+        .left_text {
+          margin-top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          h5 {
+            color: #7a6666;
+          }
+          span {
+            color: #305dc2;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+      .assets_top_right {
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+    .assets_bottom {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: wrap;
+      .assets_bottom_left {
+        width: 50%;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        transition: 0.3s;
+        .assets_bottom_left_top {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+          margin-bottom: 1rem;
+          .assets_bottom_left_top_card {
+            border: 1px solid rgb(226, 220, 220);
+            border-radius: 10px;
+            width: 70vh;
+            padding: 1rem;
+            .assets_bottom_left_top_card_top {
+              display: flex;
+              justify-content: space-between;
+
+              h4 {
+                margin: 0;
+                color: #8d8181;
+                font-weight: 400;
+              }
+            }
+            .assets_bottom_left_top_card_middle {
+              display: flex;
+              h2 {
+                font-weight: 750;
+              }
+            }
+            .assets_bottom_left_top_bottom {
+              display: flex;
+              justify-content: space-between;
+              h4 {
+                margin: 0;
+                font-weight: 550;
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+        .assets_bottom_left_bottom {
+          border: 1px solid rgb(226, 220, 220);
+          border-radius: 10px;
+          .assets_bottom_left_bottom_heading {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            border-bottom: 1px solid rgb(226, 220, 220);
+            font-size: 0.9rem;
+          }
+          .assets_bottom_left_bottom_graph {
+          }
+          .assets_bottom_left_bottom_accnumber {
+            display: flex;
+            flex-direction: column;
+            .assets_bottom_left_bottom_left_card {
+              display: flex;
+              border-radius: 10px;
+              justify-content: space-between;
+              margin: 0rem 0rem 0rem 0rem;
+              .assets_bottom_left_bottom_left_section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                img {
+                  width: 2rem;
+                  height: 2rem;
+                  border-radius: 50%;
+                  margin-left: 1rem;
+                }
+                .assets_bottom_left_bottom_cardnumber {
+                  margin-bottom: 1rem;
+                  h4 {
+                    margin-bottom: 0.6rem;
+                  }
+                  span {
+                    color: #8d8181;
+                  }
+                }
+              }
+              .assets_bottom_left_bottom_right_section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                margin-right: 2rem;
+
+                .assets_bottom_left_bottom_right_balance {
+                  display: flex;
+                  flex-direction: column;
+                  margin-bottom: 1rem;
+                  h4 {
+                    margin-bottom: 0.6rem;
+                  }
+                  span {
+                    color: #8d8181;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .assets_bottom_right {
+        width: 47%;
+        border-radius: 10px;
+        border: 1px solid rgb(226, 220, 220);
+        margin-bottom: 50px;
+        transition: 0.3s;
+        .assets_bottom_right_heading {
+          display: flex;
+          padding: 10px;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          font-size: 0.9rem;
+        }
+        .latest_transactions_assets_bottom_right {
+          font-size: 1rem;
+          margin: 2rem 0rem 0rem 2rem;
+          color: #7e7474;
+        }
+        .latest_transactions_assets_bottom_right_list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          padding: 0.6rem;
+          .latest_transactions_assets_bottom_right_list_left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              margin-left: 1rem;
+            }
+            .details {
+              margin-left: 2rem;
+              h3 {
+                font-size: 0.9rem;
+              }
+              span {
+                font-size: 0.8rem;
+              }
+            }
+            .details {
+            }
+          }
+          .latest_transactions_assets_bottom_right_list_right {
+            span {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .assets_bottom_left,
+        .assets_bottom_right {
+          width: 70%;
+        }
+      }
+
+      @media screen and (max-width: 620px) {
+        .assets_bottom_left,
+        .assets_bottom_right {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

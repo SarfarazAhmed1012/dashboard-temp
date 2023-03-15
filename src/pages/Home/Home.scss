@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  .homeContainer {
+    background-color: white;
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    .footer {
+      margin-top: auto;
+    }
+  }
+}

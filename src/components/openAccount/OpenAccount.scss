@@ -1,0 +1,46 @@
+.openAccount {
+  font-family: "Rubik", sans-serif;
+
+  .openAccount_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    .openAccount_container_img {
+      margin-top: 4rem;
+      img {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+    .openAccount_container_heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        margin-bottom: 0;
+      }
+      p {
+        display: inline-block;
+        vertical-align: middle;
+        color: rgb(110, 104, 104);
+      }
+    }
+    .openAccount_container_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.9rem;
+      color: rgb(97, 154, 238);
+      .openAccount_container_button_icon {
+        cursor: pointer;
+      }
+      h6 {
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,355 @@
+.balance {
+  font-family: "Rubik", sans-serif;
+
+  .balance_container {
+    .balance_top {
+      display: flex;
+      justify-content: space-between;
+      .balance_top_left {
+        margin-left: 2rem;
+        h1 {
+          margin: 0;
+          margin-top: 2rem;
+          font-weight: 800;
+        }
+
+        .left_text {
+          margin-top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          h5 {
+            color: #7a6666;
+          }
+          span {
+            color: #305dc2;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+      .balance_top_right {
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+
+    .balance_bottom {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: wrap;
+
+      .balance_bottom_left {
+        width: 50%;
+        border-radius: 10px;
+        border: 1px solid rgb(226, 220, 220);
+        margin-bottom: 50px;
+        transition: 0.3s;
+        .balance_bottom_left_graph {
+          margin-top: 1rem;
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 6rem;
+        }
+        .bottom_left_card_heading {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          font-size: 0.9rem;
+        }
+        .balance_bottom_left_list {
+          display: flex;
+          flex-direction: column;
+
+          .balance_bottom_left_list_income {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(226, 220, 220);
+            padding: 1rem;
+            .left_list_income_left {
+              display: flex;
+              flex-direction: column;
+              span {
+                margin-left: 1.9rem;
+              }
+              h3 {
+                margin-top: 1rem;
+                .circle_icon {
+                  font-size: 0.8rem;
+                  margin-right: 1rem;
+                  color: rgb(105, 156, 233);
+                }
+              }
+            }
+            .left_list_income_right {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              gap: 1.4rem;
+              .left_list_income_icon {
+                color: #305dc2;
+              }
+            }
+          }
+          .balance_bottom_left_list_expenses {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            .left_list_expenses_left {
+              display: flex;
+              flex-direction: column;
+              span {
+                margin-left: 1.9rem;
+              }
+              h3 {
+                margin-top: 1rem;
+                .circle_icon {
+                  font-size: 0.8rem;
+                  margin-right: 1rem;
+                  color: rgb(126, 233, 105);
+                }
+              }
+            }
+            .left_list_expenses_right {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              gap: 1.4rem;
+              .left_list_expense_icon {
+                color: #c23030;
+              }
+            }
+          }
+        }
+        .see_balance_button {
+          border: 1px solid rgb(218, 208, 208);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          //   margin: rem;
+          margin: 0 0 2rem 3rem;
+          padding: 0.7rem;
+          border-radius: 10px;
+          gap: 1rem;
+          cursor: pointer;
+          &:hover {
+            background-color: #d4cbcb;
+          }
+        }
+      }
+      .balance_bottom_right {
+        width: 40%;
+        border-radius: 10px;
+        border: 1px solid rgb(226, 220, 220);
+        margin-bottom: 50px;
+        transition: 0.3s;
+        .bottom_right_card_heading {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          font-size: 0.9rem;
+        }
+        .balance_bottom_right_slider {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          gap: 1rem;
+        }
+        .balance_bottom_right_slider_left {
+          background-color: #d8d5d5;
+          padding: 0.3rem;
+          border-radius: 10px;
+          margin-top: 2rem;
+          .arrow_back_icon {
+            font-size: 1.3rem;
+            font-weight: 900;
+          }
+        }
+        .balance_bottom_right_slider_card {
+          margin-top: 2rem;
+          .card {
+            position: relative;
+            width: 296px;
+            height: 188px;
+            padding: 12px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            border-radius: 16px;
+            border: solid 4px rgba(255, 255, 255, 0.1);
+
+            background-image: url("https://products.ls.graphics/mesh-gradients/images/78.-Night-sky.jpg");
+            background-position: center;
+            background-size: cover;
+
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+              rgba(255, 255, 255, 0.12) 0px -12px 30px,
+              rgba(255, 255, 255, 0.12) 0px 4px 6px,
+              rgba(255, 255, 255, 0.17) 0px 12px 13px,
+              rgba(255, 255, 255, 0.09) 0px -3px 5px;
+          }
+
+          h1 {
+            font-size: 20px;
+          }
+
+          h2 {
+            font-size: 16px;
+          }
+
+          h3 {
+            font-size: 11px;
+          }
+
+          p {
+            font-size: 8px;
+          }
+
+          section {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+          }
+
+          .top,
+          .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .top img {
+            width: 20px;
+          }
+
+          .brand {
+            height: 20px;
+            mix-blend-mode: overlay;
+          }
+
+          .infos {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+
+          .infos--bottom {
+            display: flex;
+            gap: 20px;
+          }
+
+          .card-number {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+          }
+        }
+        .balance_bottom_right_slider_right {
+          background-color: #d8d5d5;
+          padding: 0.3rem;
+          border-radius: 10px;
+          margin-top: 2rem;
+
+          .arrow_forward_icon {
+            font-size: 1.3rem;
+            font-weight: 900;
+          }
+        }
+        .balance_right_card_options {
+          display: flex;
+          justify-content: space-between;
+          margin: 2rem 2.5rem 2rem 2.5rem;
+
+          .card_options {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            .card_options_icon {
+              border-radius: 8px;
+              padding: 0.5rem;
+              border: 1px solid rgb(226, 220, 220);
+              &:hover {
+                background-color: #d4cbcb;
+                cursor: pointer;
+              }
+            }
+            span {
+              font-size: 0.9rem;
+            }
+          }
+        }
+        .latest_transactions_balance {
+          font-size: 1rem;
+          margin-left: 2rem;
+          color: #7e7474;
+          margin-bottom: 0;
+        }
+        .latest_transactions_balance_list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgb(226, 220, 220);
+          padding: 0.6rem;
+          .latest_transactions_balance_list_left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              margin-left: 1rem;
+            }
+            .details {
+              margin-left: 2rem;
+              h3 {
+                font-size: 0.9rem;
+              }
+              span {
+                font-size: 0.8rem;
+              }
+            }
+          }
+          .latest_transactions_balance_list_right {
+            span {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      .balance_bottom_left,
+      .balance_bottom_right {
+        width: 70%;
+      }
+    }
+
+    @media screen and (max-width: 620px) {
+      .balance_bottom_left,
+      .balance_bottom_right {
+        width: 80%;
+      }
+    }
+  }
+}
